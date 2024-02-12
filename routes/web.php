@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function(){
+    $welcome = 'Benvenuti nella mia pagina di prova!';
+    $user = 'ciccio';
+    return view('home', compact('welcome', 'user')); 
+    })->name('home');

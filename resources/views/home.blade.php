@@ -1,0 +1,1 @@
+<h1>{{ welcome }} Sei l'utente {{ user }}</h1>
